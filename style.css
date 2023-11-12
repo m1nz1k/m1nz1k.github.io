@@ -1,0 +1,69 @@
+body {
+    background: url('template/background/background_pixel_template.gif') repeat;
+    font-family: 'PixelifySans', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center-container {
+    text-align: center;
+    position: relative;
+}
+
+.text-container {
+    display: inline-block;
+    margin-right: -25px; /* Смещение начала текста на 20 пикселей вправо */
+}
+
+.bold-font {
+    font-family: 'PixelifySans', sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    position: relative;
+}
+
+/* Анимация появления текста */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Начальное смещение текста вверх */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Конечное смещение текста вниз */
+    }
+}
+
+.icons-container {
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    justify-content: center;
+    position: relative;
+    margin-top: -75px; /* Добавлено для учета отступа текста от иконок */
+}
+
+.icons-container img {
+    width: 80px; /* Уменьшил размер иконок для примера */
+    height: 80px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Анимация появления иконок */
+@keyframes fadeInIcons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('fonts/static/PixelifySans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('fonts/static/PixelifySans-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium может иметь вес 500 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('fonts/static/PixelifySans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('fonts/static/PixelifySans-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold может иметь вес 600 */
+    font-style: normal;
+}
